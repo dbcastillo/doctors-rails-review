@@ -2,6 +2,8 @@
 
 <ul>
   <% @doctors.each do |doctor| %>
-    <li><%= "Doctor: #{doctor.name}, Age: #{doctor.age}" %></li>
+    <li>
+      <%= link_to doctor.name, doctor %>
+    </li>
   <% end %>
 </ul>
